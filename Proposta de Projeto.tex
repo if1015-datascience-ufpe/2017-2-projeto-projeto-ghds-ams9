@@ -1,0 +1,89 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+\journal{Centro de Informática - UFPE}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Projeto de Ciencia dos Dados}
+\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+%% Group authors per affiliation:
+\author{Gabriel Henrique Daniel da Silva, Anderson Mota}
+\address{Recife, Pernambuco}
+
+\begin{abstract}
+Nosso projeto visa investigar dados provenientes da area de educacao, visando entender melhor os atributos que fazem uma escola ser melhor do que outra utiliando como metrica os resultados do ENEM (Exame Nacional do Ensino Medio).
+\end{abstract}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introducao}
+
+A educacao é um ponto cada vez mais mencionado como imprescindivel
+para a evolucao tanto individual como no contexto da sociedade de modo geral.
+Diante​ ​ disto,​ ​ desejamos​ ​ trabalhar​ ​ com​ ​ dados​ ​ voltados​ ​ a ​ ​ educacao.
+Por questao de escopo, optamos por trabalhar com dados voltados ao ensino
+medio, principalmente por conta das recentes polêmicas envolvendo o Exame
+Nacional do Ensino Medio (ENEM), nas quais muitos dos estudantes que prestaram
+o exame clamam que o nivel das questões estava incompativel com o ensino das
+escolas​ ​ públicas​ ​ e ​ ​ somente​ ​ acessivel​ ​ aos​ ​ estudantes​ ​ da​ ​ rede​ ​ particular.
+
+\section{Objetivos}
+
+Nesse contexto, desejamos investigar as escolas brasileiras e verificar se as
+diferenças estruturais e em qualidade de ensino são realmente tão impactantes
+entre​ ​ as​ ​ escolas​ ​ publicas​ ​ e ​ ​ privadas. Por questão de escopo, iremos focar nas escolas existentes na cidade de Olinda.
+Iremos também tentar classificar as escolas de acordo com seu nível de
+rendimento no ENEM. Com isso, desejamos investigar os atributos que são comuns
+a escolas de alto, médio e baixo rendimento para tentar entender quais deles são
+mais importantes, de forma que uma determinada escola consiga investir de forma mais inteligente para evoluir de forma mais simples.
+
+\section{Metodologia}
+
+Para tanto, vamos utilizar as ferramentas introduzidas na disciplina para
+tentar obter respostas para nossos questionamentos através de dados públicos
+existentes na web, além disso, também estamos investigando obter dados via uma
+API​ ​ ja​ ​ existente​ ​ voltada​ ​ para​ ​ educação.
+Essa API possui dados sobre diversos atributos existentes numa escola como por exemplo, se possui biblioteca, acesso a internet, quadras esportivas, alem disso tambem há dados sobre quantidade de funcionarios, alunos, computadores e diversos outros. 
+Também teremos dados provenientes de uma planilha disponibilizada pelo MEC com as notas do ENEM das escolas brasileiras. Após obter esses dados e pre-processalos, iremos partir para uma analise preliminar dos dados, focada em entender melhor o conjunto de dados. Posteriormente iremos aplicar aprendizagem de máquina para verificar quais atributos de fato possuem maior importancia na qualidade da escola. 
+
+\end{document}
